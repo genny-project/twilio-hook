@@ -1,6 +1,4 @@
-require('dotenv').config();
-
-const client = require('twilio')(process.env.SID, process.env.TOKEN);
+const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 const bodyParser = require('body-parser');
 
