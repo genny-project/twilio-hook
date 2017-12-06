@@ -5,4 +5,4 @@ else
    version="${1}"
 fi
 
-docker build -t domhynes/twilio:${version} .
+docker build -t gennyproject/twilio:${version} .
