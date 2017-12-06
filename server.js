@@ -10,7 +10,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post('/twilio', (req, res) => {
+app.post('/', (req, res) => {
   let response = new MessagingResponse();
     exec(`./godaddy.sh ${req.body.Body}`, ( err, stdout, stderr ) => {
 	  console.log( stdout );
